@@ -24,7 +24,8 @@
     },
 	"autoload": {
 		"files": [
-			"inc/wp-better-emails/namespace.php",
+			"inc/defer-async-loader/namespace.php",
+            "inc/wp-better-emails/namespace.php",
 			"inc/namespace.php"
 		],
         "classmap": [

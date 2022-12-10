@@ -42,5 +42,5 @@ function bootstrap() {
 	WP_Better_Emails\bootstrap();
 	
 	// Best practices
-	//...\bootstrap();
+	Defer_Async_Loader\bootstrap();
 }
