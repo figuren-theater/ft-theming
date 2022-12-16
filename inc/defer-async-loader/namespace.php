@@ -36,8 +36,8 @@ function load() : void {
 	if (is_admin())
 		return;
 
-	add_filter('script_loader_tag', 'load_async', 5, 3);
-	add_filter('script_loader_tag', 'load_defered', 5, 3);
+	add_filter('script_loader_tag', __NAMESPACE__ . '\\load_async', 5, 3);
+	add_filter('script_loader_tag', __NAMESPACE__ . '\\load_defered', 5, 3);
 }
 
 /**
