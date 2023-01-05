@@ -104,6 +104,10 @@ function get_default_from(){
 
 
 function get_default_from_email() : string {
+	
+	if ( getenv('FT_SMTP_USER') )
+		return getenv('FT_SMTP_USER');
+	
 	return 'email-roboter@' . get_default_from();
 }
 
