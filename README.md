@@ -1,6 +1,6 @@
 # figuren.theater | Theming
 
-This package helps with a consistent look across the [figuren.theater](https://figuren.theater) Multisite Network and beyond.
+This package helps with a consistent look across the [figuren.theater](https://figuren.theater) multisite network and beyond.
 
 ---
 
@@ -16,4 +16,4 @@ Thoose are completely managed by code and lack of their typical UI.
 Accompaniying the core functionality of the mentioned plugins, theese **best practices** are included with this package.
 
 - Allow third-party scripts to be loaded either `defer`ed or `async` via a filter or a URL#hash. 
-
+- Remove jquery 'MIGRATE' console message from frontend.
