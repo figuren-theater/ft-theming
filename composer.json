@@ -25,6 +25,7 @@
 	"autoload": {
 		"files": [
 			"inc/defer-async-loader/namespace.php",
+            "inc/__best-practices/no-jquery-migrate.php",
             "inc/wp-better-emails/namespace.php",
 			"inc/namespace.php"
 		],
