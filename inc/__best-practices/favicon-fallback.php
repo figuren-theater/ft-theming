@@ -47,7 +47,12 @@ function load() : void {
 		'https'
 	);
 
-	if ( wp_safe_redirect( $url ) ) {
+	// this favicon request
+	// doesn't work with 
+	// wp_safe_redirect( $url )
+	// 
+	// just go the old way
+	if ( wp_redirect( $url ) ) {
 		exit;
 	}
 }
