@@ -1,6 +1,6 @@
 {
 	"name": "figuren-theater/ft-theming",
-	"description": "This package helps with a consistent look across the figuren.theater Multisite Network and beyond.",
+	"description": "This package helps you & your brand with a consistent look across the figuren.theater Multisite network and beyond.",
     "homepage": "https://websites.fuer.figuren.theater",
     "type": "wordpress-muplugin",
     "keywords": ["wordpress", "theming", "branding", "corporate", "design"],
