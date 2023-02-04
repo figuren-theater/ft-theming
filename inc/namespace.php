@@ -43,5 +43,6 @@ function bootstrap() {
 	
 	// Best practices
 	Defer_Async_Loader\bootstrap();
+	Favicon_Fallback\bootstrap();
 	No_Jquery_Migrate\bootstrap();
 }
