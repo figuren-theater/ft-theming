@@ -25,7 +25,12 @@ function bootstrap() {
 
 function load() : void {
 
-	if ( has_site_icon() ) {
+	// I should open
+	// a new trac ticket for this
+	// if ( has_site_icon() ) {
+	// if ( '' === \get_site_icon_url( 512, '', 0 ) ) {
+	// if ( get_option('site_icon') ) {
+	if ( empty(\get_blog_option( 0, 'site_icon')) ) {
 		return;
 	}
 
