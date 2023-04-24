@@ -45,4 +45,5 @@ function bootstrap() {
 	Defer_Async_Loader\bootstrap();
 	Favicon_Fallback\bootstrap();
 	No_Jquery_Migrate\bootstrap();
+	Themed_Login\bootstrap();
 }
