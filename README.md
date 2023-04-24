@@ -72,6 +72,7 @@ Accompaniying the core functionality of the mentioned plugins, theese **best pra
 [X] Allow third-party scripts to be loaded either `defer`ed or `async` via a filter or a URL#hash. 
 [X] Remove jquery 'MIGRATE' console message from frontend.
 [X] Deliver our figuren.theater favicon as fallback, if non is set
+[X] Themed Login using site-icon and theme-colors
 
 ## Built with & uses
 

@@ -27,6 +27,7 @@
 			"inc/__best-practices/defer-async-loader.php",
             "inc/__best-practices/favicon-fallback.php",
             "inc/__best-practices/no-jquery-migrate.php",
+            "inc/__best-practices/themed-login.php",
             "inc/wp-better-emails/namespace.php",
 			"inc/namespace.php"
 		],
