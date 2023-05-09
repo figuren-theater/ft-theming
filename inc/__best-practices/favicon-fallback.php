@@ -12,7 +12,7 @@ use FT_CORESITES;
 use function add_action;
 use function get_site_url;
 use function has_site_icon;
-use function wp_safe_redirect;
+use function wp_redirect;
 
 
 /**
