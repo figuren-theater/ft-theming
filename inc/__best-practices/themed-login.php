@@ -32,10 +32,10 @@ function load() : void {
 	add_filter( 'login_display_language_dropdown', '__return_false' );
 
 	// use theme colors for login-page
-	add_action( 'login_enqueue_scripts', 'ft_login_logo_image_styles', 100 );
+	add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\ft_login_logo_image_styles', 100 );
 
 	// use site-icon as Login-Logo
-	add_filter( 'login_headertext', 'ft_login_logo_image' );
+	add_filter( 'login_headertext', __NAMESPACE__ . '\\ft_login_logo_image' );
 
 	// Link the Login-Logo to its related Website, not WordPress
 	/*function ft_login_url() {
