@@ -41,10 +41,10 @@ function load() : void {
 	// if the favicon aka site-icon not exists , go on
 	// and get the ID of the 'main' favicon from the network_blog
 	// this is the one to show
-	$ft_coresites_ids = array_flip( FT_CORESITES );
-	$root_site_id = (int) $ft_coresites_ids['root'];
+	// $ft_coresites_ids = array_flip( FT_CORESITES );
+	// $root_site_id = (int) $ft_coresites_ids['root'];
 
-	$url = \WP_CONTENT_URL . '/favicon.ico/';
+	$url = \WP_CONTENT_URL . '/favicon.ico';
 
 	// $url = \get_site_icon_url( 32, $url, $root_site_id );
 
