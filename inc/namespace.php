@@ -8,8 +8,9 @@
 namespace Figuren_Theater\Theming;
 
 use Altis;
-use function Altis\register_module;
 
+use function wp_get_global_settings;
+use function wp_list_pluck;
 
 /**
  * Register module.
@@ -50,4 +51,22 @@ function bootstrap() :void {
 	Favicon_Fallback\bootstrap();
 	No_Jquery_Migrate\bootstrap();
 	Themed_Login\bootstrap();
+}
+
+/**
+ * Function to get all the color settings resulting of merging core, theme, and user data.
+ *
+ * @return array<string, string> The colors to retrieve indexed by their slug.
+ */
+function get_all_colors() : array {
+	$_global_settings = wp_get_global_settings( [ 'color', 'palette' ] );
+	if ( ! isset( $_global_settings['theme'] ) ) {
+		return [];
+	}
+
+	return wp_list_pluck(
+		$_global_settings['theme'],
+		'color',
+		'slug'
+	);
 }
