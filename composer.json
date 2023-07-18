@@ -1,65 +1,77 @@
 {
 	"name": "figuren-theater/ft-theming",
 	"description": "This package helps you & your brand with a consistent look across the figuren.theater Multisite network and beyond.",
-    "homepage": "https://websites.fuer.figuren.theater",
-    "type": "wordpress-muplugin",
-    "keywords": ["wordpress", "theming", "branding", "corporate", "design"],
-    "license": "GPL-3.0-or-later",
-    "authors": [
-        {
-            "name": "figuren.theater",
-            "email": "info@figuren.theater"
-        },
-        {
-            "name": "Carsten Bach",
-            "email": "mail@carsten-bach.de",
-            "homepage": "https://carsten-bach.de",
-            "role": "Developer"
-        }
-    ],
-    "support": {
-        "email": "info@figuren.theater",
-        "issues": "https://github.com/figuren-theater/ft-theming/issues",
-        "source": "https://github.com/figuren-theater/ft-theming"
-    },
-	"autoload": {
-		"files": [
-			"inc/__best-practices/defer-async-loader.php",
-            "inc/__best-practices/favicon-fallback.php",
-            "inc/__best-practices/no-jquery-migrate.php",
-            "inc/__best-practices/themed-login.php",
-            "inc/wp-better-emails/namespace.php",
-			"inc/namespace.php"
-		],
-        "classmap": [
-            "inc/"
-        ]
+	"license": "GPL-3.0-or-later",
+	"type": "wordpress-muplugin",
+	"keywords": [
+		"wordpress",
+		"theming",
+		"branding",
+		"corporate",
+		"design"
+	],
+	"authors": [
+		{
+			"name": "figuren.theater",
+			"email": "info@figuren.theater"
+		},
+		{
+			"name": "Carsten Bach",
+			"email": "mail@carsten-bach.de",
+			"homepage": "https://carsten-bach.de",
+			"role": "Developer"
+		}
+	],
+	"homepage": "https://websites.fuer.figuren.theater",
+	"support": {
+		"email": "info@figuren.theater",
+		"issues": "https://github.com/figuren-theater/ft-theming/issues",
+		"source": "https://github.com/figuren-theater/ft-theming"
+	},
+	"require": {
+		"php": ">=7.1",
+		"figuren-theater/ft-options": "^1",
+		"wpackagist-plugin/wp-better-emails": "^0.4.0"
+	},
+	"require-dev": {
+		"figuren-theater/code-quality": "^0.6.6"
 	},
 	"repositories": [
 		{
-            "type": "git",
-            "url": "https://github.com/figuren-theater/ft-options"
-        },
+			"type": "git",
+			"url": "https://github.com/figuren-theater/ft-options"
+		},
 		{
 			"type": "composer",
-			"url" : "https://wpackagist.org"
+			"url": "https://wpackagist.org"
 		}
 	],
-	"require": {
-        "php": ">=7.1",
-        "figuren-theater/ft-options": "^1",
-		"wpackagist-plugin/wp-better-emails": "^0.4.0"
+	"autoload": {
+		"classmap": [
+			"inc/"
+		],
+		"files": [
+			"inc/theming/defer-async-loader.php",
+			"inc/theming/favicon-fallback.php",
+			"inc/theming/no-jquery-migrate.php",
+			"inc/theming/themed-login.php",
+			"inc/wp-better-emails/namespace.php",
+			"inc/namespace.php"
+		]
 	},
-    "extra": {
-        "altis": {
-            "install-overrides": [
-            	"wpackagist-plugin/wp-better-emails"
-            ]
-        }
-    },
 	"config": {
 		"allow-plugins": {
-			"composer/installers": true
+			"composer/installers": true,
+			"phpstan/extension-installer": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"ergebnis/composer-normalize": true
+		}
+	},
+	"extra": {
+		"altis": {
+			"install-overrides": [
+				"wpackagist-plugin/wp-better-emails"
+			]
 		}
 	}
 }
