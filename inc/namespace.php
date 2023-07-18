@@ -13,11 +13,13 @@ use function Altis\register_module;
 
 /**
  * Register module.
+ *
+ * @return void
  */
-function register() {
+function register() :void {
 
 	$default_settings = [
-		'enabled'          => true, // needs to be set
+		'enabled'          => true, // Needs to be set.
 		'wp-better-emails' => false,
 	];
 	$options = [
@@ -35,13 +37,15 @@ function register() {
 
 /**
  * Bootstrap module, when enabled.
+ *
+ * @return void
  */
-function bootstrap() {
+function bootstrap() :void {
 
-	// Plugins
+	// Plugins.
 	WP_Better_Emails\bootstrap();
-	
-	// Best practices
+
+	// Best practices.
 	Defer_Async_Loader\bootstrap();
 	Favicon_Fallback\bootstrap();
 	No_Jquery_Migrate\bootstrap();
