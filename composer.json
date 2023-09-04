@@ -34,7 +34,7 @@
 		"wpackagist-plugin/wp-better-emails": "^0.4.0"
 	},
 	"require-dev": {
-		"figuren-theater/code-quality": "^0.6.6"
+		"figuren-theater/code-quality": "^0.7.0"
 	},
 	"repositories": [
 		{
