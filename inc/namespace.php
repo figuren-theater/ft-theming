@@ -60,7 +60,7 @@ function bootstrap() :void {
  */
 function get_all_colors() : array {
 	$_global_settings = wp_get_global_settings( [ 'color', 'palette' ] );
-	if ( ! isset( $_global_settings['theme'] ) ) {
+	if ( ! \is_array( $_global_settings ) || ! isset( $_global_settings['theme'] ) || ! \is_array( $_global_settings['theme'] ) ) {
 		return [];
 	}
 

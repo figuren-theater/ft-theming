@@ -48,6 +48,8 @@ function load() : void {
 /**
  * Gets the color-settings resulting of merging core(ft-default), theme, and user data.
  *
+ * @todo https://github.com/figuren-theater/ft-performance/issues/29 (related)
+ *
  * @return array<string, string>
  */
 function ft_get_relevant_colors() : array {
