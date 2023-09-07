@@ -2,7 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-theming/compare/1.1.0...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-theming/compare/1.1.1...HEAD)
+
+## [1.1.1](https://github.com/figuren-theater/ft-theming/compare/1.1.0...1.1.1) - 2023-09-07
+
+- Update 7 dependencies ([#16](https://github.com/figuren-theater/ft-theming/pull/16))
 
 ## [1.1.0](https://github.com/figuren-theater/ft-theming/compare/1.0.12...1.1.0) - 2023-07-18
 
