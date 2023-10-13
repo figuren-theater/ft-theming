@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3b758f3a08e80d6e982f625a43e37c69",
+    "content-hash": "be37edba18cff98ba5858d2835433925",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,27 +153,30 @@
         },
         {
             "name": "figuren-theater/ft-options",
-            "version": "1.1.11",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/figuren-theater/ft-options.git",
-                "reference": "7764df6116733212baa363483053728d38d3bf28"
+                "reference": "127e6c8bb62cce778ee7468aa548c8326fe9c29a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/figuren-theater/ft-options/zipball/7764df6116733212baa363483053728d38d3bf28",
-                "reference": "7764df6116733212baa363483053728d38d3bf28",
+                "url": "https://api.github.com/repos/figuren-theater/ft-options/zipball/127e6c8bb62cce778ee7468aa548c8326fe9c29a",
+                "reference": "127e6c8bb62cce778ee7468aa548c8326fe9c29a",
                 "shasum": ""
             },
             "require": {
                 "markjaquith/wp-tlc-transients": "^1.0",
-                "php": ">=7.1"
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "figuren-theater/code-quality": "*"
             },
             "type": "wordpress-muplugin",
             "autoload": {
-                "psr-4": {
-                    "Figuren_Theater\\Options\\": "inc/"
-                }
+                "classmap": [
+                    "inc/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -204,7 +207,7 @@
                 "issues": "https://github.com/figuren-theater/ft-options/issues",
                 "source": "https://github.com/figuren-theater/ft-options"
             },
-            "time": "2023-07-06T21:36:17+00:00"
+            "time": "2023-09-11T10:27:33+00:00"
         },
         {
             "name": "markjaquith/wp-tlc-transients",
@@ -1470,16 +1473,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.33",
+            "version": "1.10.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1"
+                "reference": "5302bb402c57f00fb3c2c015bac86e0827e4b691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1",
-                "reference": "03b1cf9f814ba0863c4e9affea49a4d1ed9a2ed1",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5302bb402c57f00fb3c2c015bac86e0827e4b691",
+                "reference": "5302bb402c57f00fb3c2c015bac86e0827e4b691",
                 "shasum": ""
             },
             "require": {
@@ -1528,7 +1531,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-04T12:20:53+00:00"
+            "time": "2023-10-06T14:19:14+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
