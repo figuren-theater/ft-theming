@@ -30,8 +30,8 @@
 	},
 	"require": {
 		"php": ">=7.1",
-		"figuren-theater/ft-options": "^1",
-		"wpackagist-plugin/wp-better-emails": "^0.4.0"
+		"figuren-theater/ft-options": "*",
+		"wpackagist-plugin/wp-better-emails": "0.4.0"
 	},
 	"require-dev": {
 		"figuren-theater/code-quality": "*"
