@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased](https://github.com/figuren-theater/ft-theming/compare/1.1.1...HEAD)
+## [Unreleased](https://github.com/figuren-theater/ft-theming/compare/1.1.2...HEAD)
+
+## [1.1.2](https://github.com/figuren-theater/ft-theming/compare/1.1.1...1.1.2) - 2023-10-13
+
+### Dependency Updates & Maintenance
+
+- Set fixed versions for all 3rd-party-deps & UPDATE internal deps ([#21](https://github.com/figuren-theater/ft-theming/pull/21))
+- Bump figuren-theater/code-quality from 0.7.0 to 0.8.1 ([#20](https://github.com/figuren-theater/ft-theming/pull/20))
 
 ## [1.1.1](https://github.com/figuren-theater/ft-theming/compare/1.1.0...1.1.1) - 2023-09-07
 
