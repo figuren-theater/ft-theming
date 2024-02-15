@@ -46,6 +46,9 @@ function bootstrap(): void {
 	// Plugins.
 	WP_Better_Emails\bootstrap();
 
+	// ... something inbetween
+	Post_Type_Templates\bootstrap();
+
 	// Best practices.
 	Defer_Async_Loader\bootstrap();
 	Favicon_Fallback\bootstrap();

@@ -16,4 +16,8 @@
 	<!-- Use figuren.theater Coding Standards -->
 	<rule ref="figurentheater" />
 
+	<!-- No need to only have final classes. -->
+	<rule ref="Universal.Classes.RequireFinalClass.NonFinalClassFound">
+		<exclude-pattern>*/inc/*</exclude-pattern>
+	</rule>
 </ruleset>
