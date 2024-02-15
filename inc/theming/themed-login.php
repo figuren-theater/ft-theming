@@ -20,7 +20,7 @@ use function get_site_icon_url;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 	// Earliest 'do_action' of wp-login.php.
 	add_action( 'login_enqueue_scripts', __NAMESPACE__ . '\\load', 0 );
 }
@@ -30,7 +30,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load() : void {
+function load(): void {
 
 	// Removes the language dropdown from the login screen.
 	add_filter( 'login_display_language_dropdown', '__return_false' );
@@ -52,7 +52,7 @@ function load() : void {
  *
  * @return array<string, string>
  */
-function ft_get_relevant_colors() : array {
+function ft_get_relevant_colors(): array {
 	// 1. defaults
 	$relevant_colors = [];
 
@@ -89,7 +89,7 @@ function ft_get_relevant_colors() : array {
  *
  * @return void
  */
-function ft_login_logo_image_styles() :void {
+function ft_login_logo_image_styles(): void {
 
 	$relevant_colors = ft_get_relevant_colors();
 	?>
@@ -180,10 +180,10 @@ function ft_login_logo_image_styles() :void {
  * With a fall back for the f.t Plattform Logo, if none is set.
  * Requires WordPress v5.2+ in order to use the 'login_headertext' filter
  *
- * @param      string $login_header_text [description]
- * @return     string                    [description]
+ * @param      string $login_header_text The login header logo link text.
+ * @return     string                    
  */
-function ft_login_logo_image( string $login_header_text ) : string {
+function ft_login_logo_image( string $login_header_text ): string {
 
 	$_logo_width = 100;
 	$_logo_src   = get_site_icon_url(

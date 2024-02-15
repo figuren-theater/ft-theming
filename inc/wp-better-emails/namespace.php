@@ -25,7 +25,7 @@ const PLUGINPATH = '/wpackagist-plugin/' . BASENAME;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	add_action( 'Figuren_Theater\loaded', __NAMESPACE__ . '\\filter_options', 11 );
 
@@ -56,7 +56,7 @@ function load_plugin() {
  *
  * @return void
  */
-function filter_options() : void {
+function filter_options(): void {
 	/*
 	 * Plain-text default template
 	 */
@@ -98,7 +98,7 @@ function filter_options() : void {
  *
  * @return void
  */
-function remove_menu() : void {
+function remove_menu(): void {
 	remove_submenu_page( 'options-general.php', 'wpbe_options' );
 }
 
@@ -123,7 +123,7 @@ function get_default_from() {
  *
  * @return string
  */
-function get_default_from_email() : string {
+function get_default_from_email(): string {
 
 	if ( getenv( 'FT_SMTP_USER' ) ) {
 		return getenv( 'FT_SMTP_USER' );
@@ -139,7 +139,7 @@ function get_default_from_email() : string {
  *
  * @return array<string, string>
  */
-function wpbe_tags( array $tags ) : array {
+function wpbe_tags( array $tags ): array {
 	$tags['impressum'] = do_shortcode( '[impressum titles="0"]' );
 
 	return $tags;

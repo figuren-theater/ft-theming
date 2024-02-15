@@ -17,13 +17,13 @@ use function wp_list_pluck;
  *
  * @return void
  */
-function register() :void {
+function register(): void {
 
 	$default_settings = [
 		'enabled'          => true, // Needs to be set.
 		'wp-better-emails' => false,
 	];
-	$options = [
+	$options          = [
 		'defaults' => $default_settings,
 	];
 
@@ -41,7 +41,7 @@ function register() :void {
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	// Plugins.
 	WP_Better_Emails\bootstrap();
@@ -58,7 +58,7 @@ function bootstrap() :void {
  *
  * @return array<string, string> The colors to retrieve indexed by their slug.
  */
-function get_all_colors() : array {
+function get_all_colors(): array {
 	$_global_settings = wp_get_global_settings( [ 'color', 'palette' ] );
 	if ( ! \is_array( $_global_settings ) || ! isset( $_global_settings['theme'] ) || ! \is_array( $_global_settings['theme'] ) ) {
 		return [];

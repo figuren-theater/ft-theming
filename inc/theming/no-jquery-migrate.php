@@ -7,9 +7,8 @@
 
 namespace Figuren_Theater\Theming\No_Jquery_Migrate;
 
-use function add_action;
-
 use WP_Scripts;
+use function add_action;
 
 /**
  * Bootstrap module, when enabled.
@@ -19,7 +18,7 @@ use WP_Scripts;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 	add_action( 'wp_default_scripts', __NAMESPACE__ . '\\load', 0 );
 }
 
@@ -30,7 +29,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load( WP_Scripts $scripts ) : void {
+function load( WP_Scripts $scripts ): void {
 	if ( ! empty( $scripts->registered['jquery'] ) ) {
 		$scripts->registered['jquery']->deps = array_diff(
 			$scripts->registered['jquery']->deps,
