@@ -29,7 +29,7 @@ use function is_admin;
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 
 	add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\\load', 0 );
 }
@@ -39,7 +39,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load() : void {
+function load(): void {
 
 	if ( is_admin() ) {
 		return;
@@ -61,7 +61,7 @@ function load() : void {
  *
  * @return string
  */
-function load_async( string $tag, string $handle, string $src ) : string {
+function load_async( string $tag, string $handle, string $src ): string {
 
 	// If this is alrady done, do nothing and return original $tag.
 	if ( strpos( $tag, 'defer' ) || strpos( $tag, 'async' ) ) {
@@ -109,7 +109,7 @@ function load_async( string $tag, string $handle, string $src ) : string {
  *
  * @return string
  */
-function load_defered( string $tag, string $handle, string $src ) : string {
+function load_defered( string $tag, string $handle, string $src ): string {
 
 	// If this is alrady done, do nothing and return original $tag.
 	if ( strpos( $tag, 'defer' ) || strpos( $tag, 'async' ) ) {
@@ -118,7 +118,8 @@ function load_defered( string $tag, string $handle, string $src ) : string {
 
 	$scripts_to_defer = array_flip(
 		apply_filters(
-			__NAMESPACE__ . '\\scripts_to_defer', [
+			__NAMESPACE__ . '\\scripts_to_defer',
+			[
 				'mediaelement-core',
 				'mediaelement-migrate',
 				'mediaelement-vimeo',

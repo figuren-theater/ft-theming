@@ -10,15 +10,14 @@ namespace Figuren_Theater\Theming\Favicon_Fallback;
 use function add_action;
 use function content_url;
 use function get_blog_option;
-
-use function wp_redirect;
+use function wp_redirect; // phpcs:ignore WordPress.Security.SafeRedirect.wp_redirect_wp_redirect
 
 /**
  * Bootstrap module, when enabled.
  *
  * @return void
  */
-function bootstrap() :void {
+function bootstrap(): void {
 	add_action( 'do_faviconico', __NAMESPACE__ . '\\load' );
 }
 
@@ -27,7 +26,7 @@ function bootstrap() :void {
  *
  * @return void
  */
-function load() : void {
+function load(): void {
 	/**
 	 * Needs attention!
 	 *
@@ -49,9 +48,9 @@ function load() : void {
 	 * The favicon request doesn't work with
 	 * wp_safe_redirect( $url )
 	 *
-	 * So just go the old way.
+	 * So just go the old wa ignore phpcs yelling at us.
 	 */
-	if ( wp_redirect( $url ) ) {
+	if ( wp_redirect( $url ) ) { // phpcs:ignore WordPress.Security.SafeRedirect.wp_redirect_wp_redirect
 		exit;
 	}
 }
