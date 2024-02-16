@@ -47,6 +47,7 @@
 			"inc/"
 		],
 		"files": [
+			"inc/post-type-templates/namespace.php",
 			"inc/theming/defer-async-loader.php",
 			"inc/theming/favicon-fallback.php",
 			"inc/theming/no-jquery-migrate.php",
@@ -58,9 +59,9 @@
 	"config": {
 		"allow-plugins": {
 			"composer/installers": true,
-			"phpstan/extension-installer": true,
 			"dealerdirect/phpcodesniffer-composer-installer": true,
-			"ergebnis/composer-normalize": true
+			"ergebnis/composer-normalize": true,
+			"phpstan/extension-installer": true
 		}
 	},
 	"extra": {

@@ -59,6 +59,20 @@ Thoose are completely managed by code and lack of their typical UI.
 
 Accompaniying the core functionality of the mentioned plugins, theese **best practices** are included with this package.
 
+- [x] Allow any post type to use one or more templates, independently from the theme. This is enabled by default for the `page` post type by using
+  ```php
+  add_post_type_support(
+    'page',
+    'post-type-templates',
+    [
+      'templates' => [
+        'blank.php'=>'A blank canvas'
+      ],
+      'path'=>'ABSPATH_TO_TEMPLATE_DIRECTORY'
+    ]
+  );
+  ```
+
 - [x] Allow third-party scripts to be loaded either `defer`ed or `async` via a filter or a URL#hash.
 - [x] Remove jquery 'MIGRATE' console message from frontend.
 - [x] Deliver our figuren.theater favicon as fallback, if non is set
