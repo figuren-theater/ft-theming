@@ -11,7 +11,7 @@ use Figuren_Theater\Theming;
 use function add_action;
 
 const PT_SUPPORT          = 'post-type-templates';
-const TEMPLATES_DIRECTORY = Theming\DIRECTORY . '/templates/post-type-templates/'; 
+const TEMPLATES_DIRECTORY = '/templates/post-type-templates/'; 
 
 /**
  * Bootstrap module, when enabled.
@@ -38,7 +38,7 @@ function load(): void {
 			'templates' => [
 				'blank.php' => \_x( 'Blank', 'Template Title', 'figurentheater' ),
 			],
-			'path'      => TEMPLATES_DIRECTORY,
+			'path'      => Theming\DIRECTORY . TEMPLATES_DIRECTORY,
 		]
 	);
 	
@@ -71,7 +71,7 @@ function register_post_type_template( string $post_type ): void {
 		// Try to provide a fallback, if no path was given.
 		// This allows other ft-modules to call add_post_type_support 
 		// with just the name of the template from the ft-theming module, that should be used.
-		$post_type_supports['path'] = TEMPLATES_DIRECTORY;
+		$post_type_supports['path'] = Theming\DIRECTORY . TEMPLATES_DIRECTORY;
 	}
 
 	// Checks for file existence are done inside the Loader class.
