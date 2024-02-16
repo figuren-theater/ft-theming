@@ -47,6 +47,7 @@
 			"inc/"
 		],
 		"files": [
+			"inc/post-type-templates/namespace.php",
 			"inc/theming/defer-async-loader.php",
 			"inc/theming/favicon-fallback.php",
 			"inc/theming/no-jquery-migrate.php",
